@@ -1,9 +1,11 @@
 import React from "react";
 import Rating from '@material-ui/lab/Rating'
 import PhoneIcon from '@material-ui/icons/Phone'
-import useStyle from './style'
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Chip, Typography } from "@material-ui/core";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+
+import useStyle from './style'
+
 const PlaceDetails = ({ place, selected, refProp }) => {
   const classes = useStyle()
   
@@ -53,7 +55,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
            <Button size="small" color="primary" onClick={() => window.open(place.web_url, "_blank")}> 
               Trip Advisor
            </Button>
-           <Button size="small" color="primary" onClick={() => window.open(place.webside, "_blank")}> 
+           <Button size="small" color="primary" onClick={() => window.open(place.website, "_blank")}> 
               WebSite
            </Button>
          </CardActions>
